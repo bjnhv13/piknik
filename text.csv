@@ -1,0 +1,152 @@
+userId,title,template,type,value,time
+123,groove,Did you enjoy the,like,true,2018-07-30T12:22:27.232Z
+123,service,Rate our,slider,2,2018-07-30T12:22:31.893Z
+123,prices,What do you think about the,slider,7,2018-07-30T12:22:34.555Z
+123,food quality,Rate our,like,false,2018-07-30T12:22:36.955Z
+123,groove,What do you think about the,slider,7,2018-07-30T14:47:52.234Z
+123,groove,What do you think about the,slider,3,2018-07-30T14:47:53.806Z
+123,food quality,Rate our,slider,8,2018-07-30T14:47:55.093Z
+111,service,Did you enjoy the,like,true,2018-07-30T15:18:52.200Z
+111,service,Did you enjoy the,like,true,2018-07-30T15:18:52.863Z
+111,service,Rate our,like,true,2018-07-30T15:18:53.279Z
+111,service,Did you enjoy the,like,false,2018-07-30T15:18:53.673Z
+111,service,Rate our,like,false,2018-07-30T15:18:53.879Z
+111,service,Did you enjoy the,like,false,2018-07-30T15:18:54.115Z
+111,service,Did you enjoy the,like,false,2018-07-30T15:19:09.314Z
+111,service,Did you enjoy the,like,true,2018-07-30T15:19:09.975Z
+111,service,Did you enjoy the,like,true,2018-07-30T15:19:10.169Z
+111,service,Did you enjoy the,like,true,2018-07-30T15:19:10.354Z
+111,service,Did you enjoy the,like,true,2018-07-30T15:19:10.656Z
+111,service,Rate our,like,true,2018-07-30T15:19:11.110Z
+111,service,Rate our,like,true,2018-07-30T15:21:09.355Z
+111,service,Rate our,like,true,2018-07-30T15:21:09.972Z
+111,service,Rate our,like,true,2018-07-30T15:21:10.175Z
+111,service,Rate our,like,true,2018-07-30T15:21:10.364Z
+111,service,Rate our,like,true,2018-07-30T15:21:10.659Z
+111,service,Rate our,like,false,2018-07-30T15:21:11.119Z
+111,service,Did you enjoy the,like,false,2018-07-30T15:22:39.021Z
+111,service,Did you enjoy the,like,true,2018-07-30T15:22:40.370Z
+111,service,Did you enjoy the,like,false,2018-07-30T15:24:39.025Z
+111,service,Did you enjoy the,like,true,2018-07-30T15:24:40.371Z
+111,service,Rate our,like,true,2018-07-30T15:29:24.336Z
+111,service,Rate our,like,false,2018-07-30T15:29:25.572Z
+111,service,Rate our,slider,7,2018-07-30T15:29:27.867Z
+111,service,Rate our,slider,2,2018-07-30T15:29:29.166Z
+111,service,Rate our,slider,9,2018-07-30T15:29:30.454Z
+111,service,Rate our,like,false,2018-07-30T15:31:04.717Z
+111,food,Rate our,slider,9,2018-07-30T15:31:07.399Z
+111,food,Rate our,slider,2,2018-07-30T15:31:08.808Z
+111,food,Rate our,slider,5,2018-07-30T15:31:10.337Z
+111,food,Rate our,like,true,2018-07-30T15:31:11.892Z
+111,service,Rate our,slider,2,2018-07-30T15:31:13.642Z
+111,service,Rate our,slider,3,2018-07-30T15:41:42.524Z
+111,food,Rate our,slider,3,2018-07-30T15:41:43.774Z
+111,service,Rate our,slider,7,2018-07-30T15:41:45.047Z
+111,food,Rate our,like,false,2018-07-30T15:41:46.683Z
+111,food,Rate our,like,true,2018-07-30T15:41:47.706Z
+111,food,Rate our,slider,5,2018-07-31T09:54:45.906Z
+111,food,Did you enjoy the,slider,1,2018-07-31T11:32:05.951Z
+111,food,Rate our,slider,8,2018-07-31T11:48:08.941Z
+111,food,Rate our,slider,5,2018-07-31T11:48:15.179Z
+111,food,Rate our,slider,8,2018-07-31T11:48:21.138Z
+111,food,Did you enjoy the,slider,8,2018-07-31T11:48:22.139Z
+111,food,Did you enjoy the,slider,8,2018-07-31T11:48:22.846Z
+111,food,Rate our,slider,8,2018-07-31T11:48:23.404Z
+111,food,Rate our,slider,6,2018-07-31T11:48:49.925Z
+111,food,Rate our,slider,4,2018-07-31T11:48:51.226Z
+111,food,Rate our,slider,6,2018-07-31T12:36:43.665Z
+111,food,Did you enjoy the,slider,4,2018-07-31T12:36:45.955Z
+111,food,Did you enjoy the,slider,7,2018-07-31T12:36:47.395Z
+111,food,Did you enjoy the,slider,5,2018-07-31T12:46:51.815Z
+111,food,Did you enjoy the,slider,5,2018-07-31T12:46:51.820Z
+111,food,What do you think about,like,true,2018-07-31T13:12:34.416Z
+111,food,What do you think about,like,false,2018-07-31T13:12:35.677Z
+111,food,What do you think about,like,false,2018-07-31T13:12:36.478Z
+111,service,What do you think about,like,false,2018-07-31T13:12:38.472Z
+111,food,What do you think about,like,true,2018-07-31T13:12:39.979Z
+111,service,What do you think about,like,true,2018-07-31T13:12:41.220Z
+111,service,What do you think about,like,false,2018-07-31T13:14:34.448Z
+111,service,What do you think about,like,false,2018-08-02T08:13:00.076Z
+111,food,What do you think about,like,true,2018-08-02T08:13:01.244Z
+111,service,What do you think about,like,false,2018-08-02T08:22:28.189Z
+111,service,What do you think about,like,true,2018-08-02T09:40:51.060Z
+111,food,What do you think about,like,true,2018-08-02T09:40:52.280Z
+111,food,What do you think about,like,false,2018-08-02T09:40:53.270Z
+111,cleaning,Did you enjoy the,slider,7,2018-08-02T10:42:12.280Z
+111,service,What do you think about,slider,3,2018-08-02T10:42:13.809Z
+111,food,What do you think about,slider,4,2018-08-02T10:50:19.562Z
+111,service,Did you enjoy the,like,false,2018-08-02T10:52:46.836Z
+111,service,Did you enjoy the,like,true,2018-08-02T10:52:49.124Z
+111,service,Rate our,slider,8,2018-08-02T10:52:58.355Z
+111,service,Did you enjoy the,slider,1,2018-08-02T10:53:00.472Z
+111,service,Rate our,mood,false,2018-08-02T11:13:19.411Z
+111,service,Rate our,like,true,2018-08-02T11:13:20.431Z
+111,food,Rate our,mood,false,2018-08-02T11:13:21.342Z
+111,service,Rate our,like,false,2018-08-02T11:13:22.023Z
+111,service,Rate our,like,false,2018-08-02T11:13:22.804Z
+111,service,Rate our,like,false,2018-08-02T11:14:01.975Z
+111,food,Rate our,mood,true,2018-08-02T11:14:04.414Z
+111,service,Rate our,slider,7,2018-08-02T11:14:39.666Z
+111,service,Rate our,like,false,2018-08-02T11:14:41.368Z
+111,food,Rate our,mood,true,2018-08-02T11:14:43.088Z
+111,service,Rate our,like,true,2018-08-02T11:14:44.706Z
+111,service,Rate our,like,false,2018-08-02T11:16:01.947Z
+111,service,Rate our,like,false,2018-08-02T11:16:04.421Z
+111,service,Rate our,like,false,2018-08-02T11:16:39.676Z
+111,service,Rate our,like,false,2018-08-02T11:16:41.371Z
+111,service,Rate our,like,true,2018-08-02T11:16:43.094Z
+111,service,Rate our,like,true,2018-08-02T11:16:44.720Z
+111,service,Rate our,slider,3,2018-08-02T11:31:44.893Z
+111,service,Rate our,like,true,2018-08-02T11:33:24.016Z
+111,food,Rate our,mood,true,2018-08-02T11:39:49.774Z
+111,food,Rate our,mood,true,2018-08-02T11:40:43.128Z
+111,food,Rate our,slider,4,2018-08-02T11:41:07.977Z
+111,food,Rate our,like,true,2018-08-02T11:42:12.499Z
+111,service,Rate our,like,true,2018-08-02T12:05:44.004Z
+111,food,Rate our,mood,true,2018-08-02T12:05:46.738Z
+111,service,Rate our,like,false,2018-08-02T12:05:48.150Z
+111,service,Rate our,like,false,2018-08-02T12:06:18.987Z
+111,service,Rate our,like,false,2018-08-02T12:06:32.111Z
+111,food,Rate our,slider,7,2018-08-02T12:07:16.593Z
+111,service,Rate our,slider,1,2018-08-02T12:07:23.925Z
+111,cleaning,Did you enjoy the,slider,7,2018-08-02T12:16:13.868Z
+111,cleaning,Rate our,slider,6,2018-08-02T12:17:42.334Z
+111,food,What do you think about,mood,false,2018-08-02T12:19:11.525Z
+111,food,What do you think about,mood,true,2018-08-02T12:28:07.645Z
+111,food,What do you think about,like,false,2018-08-02T12:34:54.547Z
+111,food,What do you think about,like,true,2018-08-02T12:54:41.097Z
+111,food,What do you think about,like,false,2018-08-02T12:54:47.261Z
+111,cleaning,What do you think about,slider,3,2018-08-02T14:36:53.112Z
+111,cleaning,What do you think about,slider,3,2018-08-02T14:36:53.123Z
+111,food,Did you enjoy the,mood,false,2018-08-02T14:36:56.248Z
+111,food,What do you think about,slider,2,2018-08-03T06:31:24.707Z
+111,cleaning,Did you enjoy the,like,false,2018-08-03T06:31:30.412Z
+111,service,What do you think about,mood,true,2018-08-03T06:34:05.104Z
+111,service,What do you think about,like,false,2018-08-03T06:34:08.024Z
+111,service,What do you think about,mood,false,2018-08-03T06:34:10.116Z
+111,cleaning,What do you think about,mood,false,2018-08-03T06:34:11.952Z
+111,service,What do you think about,mood,false,2018-08-03T06:34:52.088Z
+111,cleaning,What do you think about,like,false,2018-08-03T06:35:00.870Z
+111,cleaning,What do you think about,like,false,2018-08-03T06:36:22.994Z
+111,cleaning,What do you think about,like,false,2018-08-03T06:36:24.077Z
+111,service,What do you think about,mood,false,2018-08-03T06:37:33.666Z
+111,cleaning,What do you think about,like,true,2018-08-03T06:37:35.841Z
+111,service,What do you think about,like,false,2018-08-03T06:37:37.713Z
+111,service,What do you think about,mood,false,2018-08-03T06:37:39.365Z
+111,cleaning,What do you think about,like,false,2018-08-03T06:43:30.433Z
+111,cleaning,What do you think about,like,false,2018-08-03T06:43:32.648Z
+111,service,What do you think about,like,true,2018-08-03T06:43:34.375Z
+111,food quality,Rate our,stars5,2,2018-08-05T11:08:18.673Z
+111,food quality,Rate our,stars5,1,2018-08-05T11:09:29.404Z
+111,food quality,Rate our,stars5,4,2018-08-05T11:09:32.755Z
+111,food quality,Rate our,stars5,4,2018-08-05T11:12:43.636Z
+111,food quality,Rate our,stars5,5,2018-08-05T11:20:45.730Z
+111,food quality,Rate our,stars5,3,2018-08-05T12:03:31.300Z
+111,food quality,What do you think about the,stars3,2,2018-08-05T13:19:44.887Z
+111,food quality,What do you think about the,stars3,3,2018-08-05T13:23:31.649Z
+111,food quality,What do you think about the,stars3,3,2018-08-05T13:24:24.487Z
+111,food quality,What do you think about the,stars3,2,2018-08-05T13:24:29.878Z
+111,food quality,What do you think about the,words,3,2018-08-05T14:44:48.065Z
+111,food quality,What do you think about the,words,asdsad,2018-08-05T15:21:09.003Z
+111,food quality,What do you think about the,words,love u Yehuda,2018-08-05T15:21:59.843Z
+111,food quality,What do you think about the,stars 5,4,2018-08-08T14:21:45.532Z
