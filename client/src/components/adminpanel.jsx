@@ -1,10 +1,27 @@
 import React, { Component, Fragment } from 'react';
-import Select from './select';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import ListItemText from '@material-ui/core/ListItemText';
+import Select from '@material-ui/core/Select';
+import Checkbox from '@material-ui/core/Checkbox';
+
+const ITEM_HEIGHT = 48;
+const ITEM_PADDING_TOP = 8;
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      width: 250,
+    },
+  },
+};
 
 class AdminPanel extends Component {
 	
@@ -61,7 +78,7 @@ class AdminPanel extends Component {
 			this.sendAnswerData(submitData);
 			this.setState({dialogOpen: true, dialogType: "submit"});
 		}
-		this.timeout = setTimeout(this.closeDialog.bind(this), 4000);
+		this.timeout = setTimeout(this.closeDialog.bind(this), 5000);
 	}
 
 	getAdminData = () => {
@@ -72,7 +89,7 @@ class AdminPanel extends Component {
 					return { 
 						"label": key,
 						"placeholder": "please enter value",
-						"selected": {},
+						"selected": [],
 						"options": res[key].map( (val) => { return { value: val} } )
 					}
 				});
@@ -99,15 +116,25 @@ class AdminPanel extends Component {
 
 renderSelection (selection, index ) {
 	return(
-		<Select
-		key={index}
-		index={index}
-		label={selection.label}
-		placeholder={selection.placeholder}
-		options={selection.options}
-		handlechange={this.handleClickOption}
-		multiple
-		/>
+
+		<FormControl key={index} style={{ minWidth: 120, maxWidth: 300,  margin: 10}}>
+    <InputLabel htmlFor="select-multiple-checkbox">{selection.label}</InputLabel>
+    <Select
+   		multiple
+     value={selection.selected}
+     onChange={(e) => this.handleClickOption(index, e.target.value)}
+     input={<Input id="select-multiple-checkbox" />}
+     renderValue={selected => selected.join(', ')}
+     MenuProps={MenuProps}
+    >
+      {selection.options.map((option, index) => (
+        <MenuItem key={index} value={option.value}>
+          <Checkbox checked={selection.selected.indexOf(option.value) > -1} />
+          <ListItemText primary={option.value} />
+        </MenuItem>
+      ))}
+    </Select>
+  </FormControl>
 	)
 }
 	closeDialog = () => {

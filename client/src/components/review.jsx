@@ -9,7 +9,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 const style = {
-	optionsWrap: {margin: "auto", width: "fit-content", padding: 20}
+	optionsWrap: {margin: "auto", display: "table", padding: "2vw"}
 
 }
 
@@ -93,7 +93,7 @@ class Review extends Component {
 
 	submitAnswer(answer) {
 		this.setState({	value: answer, dialogOpen: true });
-		this.timeoutSubmit = setTimeout(this.closeDialog.bind(this), 4000);
+		this.timeoutSubmit = setTimeout(this.closeDialog.bind(this), 5000);
 		const { apiData } = this.state;
 		const answerData = {
 				userId: this.props.userId,
@@ -118,7 +118,7 @@ class Review extends Component {
 		const { apiData, title, value, hideOption } = this.state
 		return (
 			<div className="container-center">
-				<Typography align="center" variant="display2" style={{padding: 20}}>
+				<Typography align="center" variant="display2" style={{ fontSize: "5vw",padding: 20}}>
 					{title}
 				</Typography>
 				<Option hideOption={hideOption} value={value} type={apiData.type} handleClick={answer => this.submitAnswer(answer)} />

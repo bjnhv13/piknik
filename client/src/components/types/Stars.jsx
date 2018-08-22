@@ -53,7 +53,7 @@ export default class Stars extends Component {
       rating.push(
         <Button
           key={i}
-          size="large"
+          size="small"
           onMouseEnter={() => this.setState({hoverValue: i})}
           onMouseLeave={() => this.setState({hoverValue: value})}
           onClick={() => { handleChange(10/max*i) }}

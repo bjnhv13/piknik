@@ -9,6 +9,17 @@ import Paper from '@material-ui/core/Paper';
 const USER_ID = '111';
 const defaultSecret = [true, false, false];
 
+const style = {
+	backgroundImage: "linear-gradient(to top, #0dc2aa, #55d0bb, #7dddcc, #a0ebdd, #c1f8ee)",
+	position: "fixed",
+    height: "100vh",
+    width: "100vw",
+    top: 0,
+    right: 0,
+    left: 0,
+    bottom: 0
+}
+
 class App extends Component {
 
 	constructor(props) {
@@ -48,7 +59,7 @@ class App extends Component {
 
 	render () {
 		return (
-		<Paper>
+		<Paper style={style}>
 			{ this.state.showNav && <Navbar handleShowNav={this.toggleNavbar}/>}
 			{ !this.state.showNav && <SecretNavbar secret={this.state.secret} handleSecret={this.handleSecret}/>}
 			<Switch>

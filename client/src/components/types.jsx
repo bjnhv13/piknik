@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Slider from 'react-rangeslider';
-import 'react-rangeslider/lib/index.css';
+import Slider from '@material-ui/lab/Slider';
 import Button from '@material-ui/core/Button';
 import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
@@ -8,9 +7,9 @@ import MoodBadIcon from '@material-ui/icons/MoodBad';
 import MoodIcon from '@material-ui/icons/Mood';
 
 const style = {
-	button : {margin: 20},
-	bottonsWrap: {margin: "auto", width: "fit-content", padding: 20}
-
+	button : {margin: "2vw"},
+	bottonsWrap: {margin: "auto", display:"table", padding: "2vw"},
+	slider: {width: "70vw"}
 }
 
 class LikeType extends Component {
@@ -38,18 +37,14 @@ class LikeType extends Component {
 }
 
 class SliderType extends Component {
-	constructor (props, context) {
-		super(props, context)
+	constructor (props) {
+		super(props)
 		this.state = {
 			value: 5
 		}
 	}
 
-	handleChangeStart = () => {
-		console.log('Change event started')
-	};
-
-	handleChange = value => {
+	handleChange = (event, value) => {
 		this.setState({
 			value: value
 		})
@@ -65,19 +60,7 @@ class SliderType extends Component {
 	render () {
 		const { value } = this.state
 		return (
-			<div className='slider'>
-			<span>{this.props.lowValue}</span>
-				<Slider
-					min={0}
-					max={10}
-					value={value}
-					onChangeStart={this.handleChangeStart}
-					onChange={this.handleChange}
-					onChangeComplete={this.handleChangeComplete}
-				/>
-				<span>{this.props.highValue}</span>
-				<div className='sliderValue'>{value}</div>
-			</div>
+			<Slider style={style.slider} value={value} min={0} max={10	} step={1} onChange={this.handleChange} onDragEnd={this.handleChangeComplete} />
 		)
 	}
 }
