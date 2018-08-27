@@ -1,11 +1,11 @@
 userId,title,template,type,value,time
-123,groove,Did you enjoy the,like,true,2018-07-30T12:22:27.232Z
 123,service,Rate our,slider,2,2018-07-30T12:22:31.893Z
 123,prices,What do you think about the,slider,7,2018-07-30T12:22:34.555Z
 123,food quality,Rate our,like,false,2018-07-30T12:22:36.955Z
 123,groove,What do you think about the,slider,7,2018-07-30T14:47:52.234Z
 123,groove,What do you think about the,slider,3,2018-07-30T14:47:53.806Z
 123,food quality,Rate our,slider,8,2018-07-30T14:47:55.093Z
+123,,,,,
 111,service,Did you enjoy the,like,true,2018-07-30T15:18:52.200Z
 111,service,Did you enjoy the,like,true,2018-07-30T15:18:52.863Z
 111,service,Rate our,like,true,2018-07-30T15:18:53.279Z
@@ -150,3 +150,57 @@ userId,title,template,type,value,time
 111,food quality,What do you think about the,words,asdsad,2018-08-05T15:21:09.003Z
 111,food quality,What do you think about the,words,love u Yehuda,2018-08-05T15:21:59.843Z
 111,food quality,What do you think about the,stars 5,4,2018-08-08T14:21:45.532Z
+111,food quality,What do you think about the,numbers 10,5,2018-08-15T09:54:46.511Z
+111,food quality,What do you think about the,numbers 10,9,2018-08-15T09:58:45.460Z
+111,food quality,What do you think about the,numbers 5,6,2018-08-15T10:53:01.134Z
+111,tidiness,Did you enjoy the,mood,true,2018-08-22T07:19:46.253Z
+111,service,Rate our,stars 5,6,2018-08-22T07:19:48.789Z
+111,service,Did you enjoy the,mood,false,2018-08-22T07:19:51.117Z
+111,service,Did you enjoy the,mood,false,2018-08-22T07:19:52.802Z
+111,prices,Did you enjoy the,stars 5,10,2018-08-22T07:19:54.984Z
+111,prices,Did you enjoy the,stars 5,10,2018-08-22T07:21:29.638Z
+111,prices,Did you enjoy the,stars 5,8,2018-08-22T07:21:46.261Z
+111,prices,Did you enjoy the,stars 5,6,2018-08-22T07:21:48.786Z
+111,prices,Did you enjoy the,stars 5,8,2018-08-22T07:21:51.118Z
+111,prices,Did you enjoy the,stars 5,4,2018-08-22T07:21:52.805Z
+111,prices,Did you enjoy the,stars 5,6,2018-08-22T07:21:54.990Z
+111,tidiness,How did you like our,slider,10,2018-08-22T07:26:06.788Z
+111,service,Rate our,slider,"{""isTrusted"":true}",2018-08-22T09:07:40.278Z
+111,service,Rate our,slider,"{""isTrusted"":true}",2018-08-22T09:07:45.831Z
+111,tidiness,How did you like our,slider,"{""isTrusted"":true}",2018-08-22T09:07:48.517Z
+111,tidiness,Rate our,slider,"{""isTrusted"":true}",2018-08-22T09:08:01.617Z
+111,tidiness,Rate our,slider,8,2018-08-22T09:10:27.860Z
+111,tidiness,How did you like our,slider,5,2018-08-22T09:18:13.301Z
+111,tidiness,Rate our,slider,2,2018-08-22T09:21:16.217Z
+111,service,How did you like our,slider,8,2018-08-22T09:21:18.223Z
+111,service,How did you like our,slider,4,2018-08-22T09:21:59.578Z
+111,service,Rate our,slider,9,2018-08-22T09:24:18.705Z
+111,tidiness,How did you like our,slider,2,2018-08-22T09:24:24.023Z
+111,tidiness,How did you like our,slider,2,2018-08-22T09:26:24.273Z
+111,service,Rate our,slider,2,2018-08-22T10:01:06.075Z
+111,service,What do you think about the,slider,8,2018-08-22T10:20:42.690Z
+111,location,Did you enjoy the,stars 3,10,2018-08-23T09:27:51.447Z
+111,service,Rate our,stars 3,10,2018-08-23T09:30:54.045Z
+111,service,Rate our,stars 3,10,2018-08-23T09:31:59.221Z
+111,service,Rate our,stars 3,10,2018-08-23T09:37:18.431Z
+111,service,Rate our,stars 3,6.666666666666667,2018-08-23T09:37:33.673Z
+111,tidiness,Rate our,slider,7,2018-08-23T09:46:58.659Z
+111,tidiness,Rate our,slider,6,2018-08-23T09:50:25.099Z
+111,food quality,Rate our,like,true,2018-08-23T10:10:07.612Z
+111,food quality,Rate our,like,false,2018-08-23T10:10:13.762Z
+111,tidiness,Rate our,words,נחמיה היה פה,2018-08-23T10:15:36.525Z
+111,tidiness,Rate our,numbers 5,10,2018-08-23T11:12:37.718Z
+111,tidiness,Rate our,words,מעולה,2018-08-23T11:12:55.936Z
+111,tidiness,Rate our,numbers 5,10,2018-08-23T11:13:01.058Z
+111,tidiness,Rate our,numbers 5,10,2018-08-23T11:13:03.308Z
+111,groove,Rate our,stars 5,8,2018-08-23T11:42:39.749Z
+111,food quality,What do you think about the,mood,true,2018-08-23T11:43:18.516Z
+111,food quality,What do you think about the,stars 3,6.666666666666667,2018-08-23T11:43:25.476Z
+111,groove,Did you enjoy the,mood,true,2018-08-23T11:43:27.832Z
+111,groove,Rate our,like,true,2018-08-27T11:28:44.767Z
+111,groove,Rate our,slider,2,2018-08-27T11:28:48.933Z
+111,groove,Rate our,like,true,2018-08-27T11:28:51.023Z
+111,groove,Rate our,like,false,2018-08-27T11:28:53.962Z
+111,groove,Rate our,like,true,2018-08-27T11:28:55.595Z
+111,groove,Rate our,like,false,2018-08-27T11:28:58.648Z
+111,groove,Rate our,slider,8,2018-08-27T12:10:21.372Z

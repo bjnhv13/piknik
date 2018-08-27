@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {Button} from '@material-ui/core'
 import { Star, StarBorder } from '@material-ui/icons';
+import Tooltip from '@material-ui/core/Tooltip';
+import Zoom from '@material-ui/core/Zoom';
+
 
 const style = {
   emptyStar: {fill: '#ddd', fontSize: 40},
@@ -51,15 +54,19 @@ export default class Stars extends Component {
 
     for (let i = 1; i <= max; i++) {
       rating.push(
-        <Button
-          key={i}
-          size="small"
-          onMouseEnter={() => this.setState({hoverValue: i})}
-          onMouseLeave={() => this.setState({hoverValue: value})}
-          onClick={() => { handleChange(10/max*i) }}
-        >
-          {this.renderIcon(i)}
-        </Button>
+        <Tooltip TransitionComponent={Zoom} placement="top" title={i} enterTouchDelay={100} leaveTouchDelay={500}>
+          <Button
+            key={i}
+            size="small"
+            onMouseEnter={() => this.setState({hoverValue: i})}
+            onTouchStart={() => this.setState({hoverValue: i})}
+            onMouseLeave={() => this.setState({hoverValue: value})}
+            onTouchEnd={() => this.setState({hoverValue: value})}
+            onClick={() => { handleChange(10/max*i) }}
+          >
+            {this.renderIcon(i)}
+          </Button>
+        </Tooltip>
       )
     }
 

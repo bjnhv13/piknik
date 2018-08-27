@@ -12,12 +12,10 @@ const defaultSecret = [true, false, false];
 const style = {
 	backgroundImage: "linear-gradient(to top, #0dc2aa, #55d0bb, #7dddcc, #a0ebdd, #c1f8ee)",
 	position: "fixed",
-    height: "100vh",
-    width: "100vw",
-    top: 0,
-    right: 0,
-    left: 0,
-    bottom: 0
+		height: "99vh",
+		width: "99vw",
+		top: 0,
+		left: "0.5vw",
 }
 
 class App extends Component {
@@ -26,7 +24,7 @@ class App extends Component {
 		super(props);
 		this.state = {
 			showNav: false,
-  		secret: defaultSecret
+			secret: defaultSecret
 		}
 		this.toggleNavbar = this.toggleNavbar.bind(this);
 		this.handleSecret = this.handleSecret.bind(this);
@@ -34,12 +32,12 @@ class App extends Component {
 	};
 
 	componentDidMount(){
-      document.getElementById('lds-ring').outerHTML = ''
+			document.getElementById('lds-ring').outerHTML = ''
 	}
 
 	toggleNavbar() {
 			this.setState(prevState => ({
-  		showNav: !prevState.showNav,
+			showNav: !prevState.showNav,
 		}));
 	};
 
@@ -47,8 +45,8 @@ class App extends Component {
 		if ( i <= 2 ) {
 			this.setState( prevState => {
 				const [ ...secret ] = prevState.secret
-	  		secret[ i + 1 ] = true;
-	  		return { secret }
+				secret[ i + 1 ] = true;
+				return { secret }
 			});
 		} else {
 			this.setState( {secret: defaultSecret} )
@@ -57,16 +55,21 @@ class App extends Component {
 
 	};
 
+	renderNavbar() {
+		return this.state.showNav ? <Navbar handleShowNav={this.toggleNavbar}/> : <SecretNavbar secret={this.state.secret} handleSecret={this.handleSecret}/>;
+	}
+
 	render () {
 		return (
 		<Paper style={style}>
-			{ this.state.showNav && <Navbar handleShowNav={this.toggleNavbar}/>}
-			{ !this.state.showNav && <SecretNavbar secret={this.state.secret} handleSecret={this.handleSecret}/>}
-			<Switch>
-				<Route exact path='/' render={(props) => <Review userId={USER_ID} {...props} /> }/>
-				<Route path='/AdminPanel' render={(props) => <AdminPanel userId={USER_ID} {...props} /> }/>
-				<Route component={Review}/>
-			</Switch>
+			{ this.renderNavbar() }
+			<div className="container-center">
+				<Switch>
+					<Route exact path='/' render={(props) => <Review userId={USER_ID} {...props} /> }/>
+					<Route path='/AdminPanel' render={(props) => <AdminPanel userId={USER_ID} {...props} /> }/>
+					<Route render={(props) => <Review userId={USER_ID} {...props} /> }/>
+				</Switch>
+			</div>
 		</Paper>
 		)
 	}

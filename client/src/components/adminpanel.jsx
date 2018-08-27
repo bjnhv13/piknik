@@ -150,8 +150,8 @@ renderSelection (selection, index ) {
 		<Fragment>
 			<h1>Admin Panel</h1>
 			<div>{this.renderSelections()}</div>
-			<Button color="secondary" style={{margin: 10}} onClick={this.handleSubmit}>SUBMIT</Button>
-			<Button color="secondary" style={{margin: 10}} onClick={this.handleSubmitAll}>SUBMIT ALL</Button>
+			<Button style={{margin: 10}} onClick={this.handleSubmit}>SUBMIT</Button>
+			<Button style={{margin: 10}} onClick={this.handleSubmitAll}>SUBMIT ALL</Button>
 			<Dialog
           open={this.state.dialogOpen}
           onClose={this.closeDialog}

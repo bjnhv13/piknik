@@ -31,6 +31,7 @@ export default class Words extends Component {
 		return (
 			<div>
 				<TextField
+						style={{width: "60vw", margin: "3vw"}}
 						autoFocus
 						margin="dense"
 						label="please enswer in few words"
@@ -38,10 +39,16 @@ export default class Words extends Component {
 						value={this.props.answer}
 						onChange={this.handleChange}
 						type="text"
-						fullWidth
+						multiline
+						rowsMax="3"
 					/>
-					<Button variant="contained" onClick={() => this.props.handleClick(this.state.value)}>
-					Send
+					<Button 
+						variant="contained"
+						mini
+						onClick={() => this.props.handleClick(this.state.value)}
+						style={{ display: "flex", margin: "auto" }}
+    >
+					<span>Send</span>
 					<Icon><SendIcon/></Icon>
 				</Button>
 			</div>

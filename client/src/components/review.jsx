@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { LikeType, SliderType} from './types';
+import React, { Component, Fragment } from 'react';
 import Stars from './types/Stars';
 import Words from './types/Words';
+import LikeType from './types/Like';
+import SliderType from './types/Slider';
 import Typography from '@material-ui/core/Typography';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -9,7 +10,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 const style = {
-	optionsWrap: {margin: "auto", display: "table", padding: "2vw"}
+	optionsWrap: {margin: "auto", display: "table", padding: "1vw"}
 
 }
 
@@ -75,13 +76,13 @@ class Review extends Component {
 				if (res.error) {
 					this.setState({ title: <span className="red">{res.error}</span> })
 				} else {
-					this.setState({ apiData: res, title: res.template + ' ' + res.title + '?' });
+					this.setState({ apiData: res, title: res.template + ' ' + res.title + '?', hideOption: false });
 			}})
 			.catch(err => console.log(err));
 	};
 
 	componentDidMount() {
-		this.getNextQuestion().then( this.setState({ hideOption: false }) )
+		this.getNextQuestion().then( this.setState({  }) )
 	};
 
 	callApi = async () => {
@@ -107,33 +108,33 @@ class Review extends Component {
 	};
 
 	closeDialog = () => {
-    this.setState({ dialogOpen: false });
-  };
+		this.setState({ dialogOpen: false });
+	};
 
- 	componentWillUnmount() {
+	componentWillUnmount() {
 		if (this.timeoutSubmit) {clearTimeout(this.timeoutSubmit)}
 	};
 
 	render() {
 		const { apiData, title, value, hideOption } = this.state
 		return (
-			<div className="container-center">
-				<Typography align="center" variant="display2" style={{ fontSize: "5vw",padding: 20}}>
+			<Fragment>
+				<Typography align="center" variant="display2" style={{ fontSize: "5vw",padding: "1vw"}}>
 					{title}
 				</Typography>
 				<Option hideOption={hideOption} value={value} type={apiData.type} handleClick={answer => this.submitAnswer(answer)} />
 				 <Dialog
-          open={this.state.dialogOpen}
-          onClose={this.closeDialog}
-        >
-          <DialogTitle>{"Thank You!"}</DialogTitle>
-          <DialogContent>
-            <DialogContentText>
-              We hope that you enjoyed here.
-            </DialogContentText>
-          </DialogContent>
-        </Dialog>
-			</div>
+					open={this.state.dialogOpen}
+					onClose={this.closeDialog}
+				>
+					<DialogTitle>{"Thank You!"}</DialogTitle>
+					<DialogContent>
+						<DialogContentText>
+							We hope that you enjoyed here.
+						</DialogContentText>
+					</DialogContent>
+				</Dialog>
+			</Fragment>
 		);
 	}
 };

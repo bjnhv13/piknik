@@ -1,4 +1,4 @@
-body {
+/*body {
 background-image: linear-gradient(to top, #0dc2aa, #55d0bb, #7dddcc, #a0ebdd, #c1f8ee);
 position: fixed;
     height: 100vh;
@@ -7,35 +7,20 @@ position: fixed;
     right: 0;
     left: 0;
     bottom: 0;
-}
+}*/
 
 
 .container-center {
 	margin: auto;
+	padding-top: 2vw;
 	width: 90%
 }
 
-.question-header {
+/*.question-header {
 	text-align: center;
 	margin: 10%;
 	font-family: serif;
 	font-size: 3em;
 	line-height: 1em;
-}
+}*/
 
-.sliderValue {
-	text-align: center;
-	margin: 10%;
-	font-size: 2em;
-	font-style: italic;
-    font-weight: bold;
-}
-
-.button-choice {
-	margin: 10%;
-}
-
-.star {
-	width: 2em	!importent;
-    height: 2em	!importent;
-}

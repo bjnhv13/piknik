@@ -17,23 +17,22 @@ app.use(bodyParser.urlencoded({extended: false}));
 getRandomDataFromDb = (id, res) => {
 	let data = {};
 	profilesDb.profiles.find( {_id: id}, (err, docs) =>  {
+		console.log("getting new data set from DB...")
 		if (docs.length === 0) {
-			res.send( {error: 'no such id'})
+			res.send( {error: 'no such id profile'})
+			console.log(err);
 		} else {
 			console.log(docs);
-			console.log(err);
 			const titles = docs[0].titles;
 			const types = docs[0].types;
 			const templates = docs[0].templates;
 			getRandomItemFromArray = ( array ) => { return array[Math.floor(Math.random()*array.length)] };
-
 			data.title = getRandomItemFromArray(titles);
 			data.template = getRandomItemFromArray(templates);
 			data.type =getRandomItemFromArray(types);
 			console.log("data sent: ");
 			console.log(data)
 			res.send(data);
-			
 		}
 	})
 };
@@ -76,6 +75,11 @@ app.post('/api/admin', (req, res) => {
 	profilesDb.profiles.update({_id: newData.userId}, newData, {upsert: true});
 })
 
+app.get('/api/admin', (req, res) => {
+	console.log('api admin called');
+	getAdminDataFromDb(res);
+});
+
 app.get('/api/review', (req, res) => {
 	console.log('api review called');
 	if(req._parsedUrl.query){
@@ -84,10 +88,6 @@ app.get('/api/review', (req, res) => {
 	} else {
 		res.send( "/api/review?id=###    query id required!");
 		console.error(" missing id in query!"); };
-});
-app.get('/api/admin', (req, res) => {
-	console.log('api admin called');
-	getAdminDataFromDb(res);
 });
 
 
